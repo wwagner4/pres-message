@@ -1,0 +1,33 @@
+Message Oriented Middleware MOM
+Message Broker Software
+
+Vorteile
+    Asynchrone/synchrone Kommunikation
+    Server/Dienst muss nicht sofort verfügbar sein
+    Message-Warteschlangen
+    Meist schnellere Ausführung als Funktionsaufruf-basierte Programme
+    Lose Kopplung von Server/Clients
+    Mehr Toleranz für Änderungen der bestehenden Funktionen
+    Verbesserte Verfügbarkeit der Systeme
+    Parallele Verarbeitung von Nachrichten möglich
+
+Nachteile
+    Ausfall der MOM legt alle angeschlossenen Systeme lahm
+    Designen, Testen, Debuggen und Entwicklung der Bauteile sind für Synchron-Programmierer ungewohnt
+
+RabbitMQ als AMQP-Broker
+
+RabbitMQ ist eine Open Source Message Broker Software, die das Advanced Message Queuing Protocol (AMQP) implementiert. 
+Der RabbitMQ-Server ist in Erlang (Actor-Modell) geschrieben. 
+
+Die Software wird entwickelt und gepflegt von Rabbit Technologies Ltd, einem Zusammenschluss von LShift und Cohesive FT, die im April 2010 von SpringSource erworben wurde. 
+
+
+AMQP
+Advanced Message Queuing Protocol (AMQP) ist ein in Entwicklung befindliches Wirelevel-Protokoll. 
+Um der großen Verbreitung von JMS Rechnung zu tragen, sind alle JMS Funktionen in dem Protokoll eingearbeitet.
+
+
+Das Advanced Message Queuing Protocol (AMQP) ist ein offener Standard, der ein binäres Netzwerkprotokoll auf Anwendungsebene für eine Message-orientierte Middleware (MOM) darstellt.[1]
+
+AMQP stellt ein binäres Netzwerkprotokoll dar, das unabhängig von der Programmiersprache ist. Um der großen Verbreitung von JMS Rechnung zu tragen, sind alle Funktionen von JMS in dem Protokoll eingearbeitet worden. Dies ermöglicht es den Entwicklern, weiter die JMS-Schnittstelle zu nutzen, während sich MOMs untereinander mit AMQP verständigen können. 
