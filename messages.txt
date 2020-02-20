@@ -31,3 +31,39 @@ Um der großen Verbreitung von JMS Rechnung zu tragen, sind alle JMS Funktionen 
 Das Advanced Message Queuing Protocol (AMQP) ist ein offener Standard, der ein binäres Netzwerkprotokoll auf Anwendungsebene für eine Message-orientierte Middleware (MOM) darstellt.[1]
 
 AMQP stellt ein binäres Netzwerkprotokoll dar, das unabhängig von der Programmiersprache ist. Um der großen Verbreitung von JMS Rechnung zu tragen, sind alle Funktionen von JMS in dem Protokoll eingearbeitet worden. Dies ermöglicht es den Entwicklern, weiter die JMS-Schnittstelle zu nutzen, während sich MOMs untereinander mit AMQP verständigen können. 
+
+Homepage: https://www.amqp.org/
+
+10 TODO translate
+The Advanced Message Queuing Protocol (AMQP) is an open standard for passing business messages between applications or organizations.  It connects systems, feeds business processes with the information they need and reliably transmits onward the instructions that achieve their goals. 
+AMQP is designed to solve real problems, completely.
+
+Key Capabilities
+
+AMQP connects across:
+
+    Organizations – applications in different organizations
+    Technologies – applications on different platforms
+    Time – systems don’t need to be available simultaneously
+    Space – reliably operate at a distance, or over poor networks
+
+Business Case
+
+The main reasons an enterprise will chose AMQP over proprietary alternatives are:
+
+    Realize the savings commoditization brings; remove vendor lock-in
+    Connect applications on different platforms; choose the right platform for the job
+    Connect to business partners using a full featured open standard; remove technical barriers to trade
+    Position for innovations built upon the foundation of AMQP
+
+Key Features
+
+AMQP was designed with the following main characteristics as goals:
+
+    Security
+    Reliability
+    Interoperability
+    Standard
+    Open
+
+10 TODO end
