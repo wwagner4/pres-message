@@ -1,6 +1,10 @@
-Test
+
 Message Oriented Middleware MOM
 Message Broker Software
+
+Wir befinden uns in der Domaine für 'Event-driven-Microservices'
+Message Format ist beliebig, XML, Json, binary, ...
+
 
 Vorteile
     Asynchrone/synchrone Kommunikation
@@ -68,3 +72,41 @@ AMQP was designed with the following main characteristics as goals:
     Open
 
 10 TODO end
+
+Video 1
+
+Begriffe
+--------
+Provider, Sender
+
+Broker, Message-Broker
+
+Consumer, Receiver, Subscriber
+
+Queue
+
+Sicherstellung einer Zustellung
+-------------------------------
+Queue -> Confirm -> Provider
+Consumer -> Acknowledge -> Queue
+
+Im Falle eines Fehlers werden Meldungen evtl. mehrfach zugestellt. 
+Das Programm muss damit umgehen können.
+
+Pup/Sub
+Neues Konzept bei AMQP ist Exchange die jeweils einer Queue vorgeschaltet ist.
+Genauer: Sie ist and die Queue mittels Binding-Key gebunden
+Mit Hilfe von Exchanges kann ein Pub/Sub System erstellt werden.
+Exchange Arten (Strategien): 
+	- Fan Out 
+	- Direct. Hat einen Binding-Key. Publisher provides a Routing-Key. BK RK müssen zueinander passen.
+	- Topic. BK kann Wildcards enthalten.
+
+Store and Forward Queues
+------------------------
+Pub und Sub müssen nicht gleichzeitig laufen.
+
+Task Queues
+-----------
+Lösung für mehrere Consumer gleichzeitig
+
