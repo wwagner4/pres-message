@@ -1,9 +1,18 @@
+References: Videos
+https://fullstackmastery.com/courses/RMQJAVA/lessons/65
+https://www.youtube.com/watch?v=trRAaPxRZ7U
+
 
 Message Oriented Middleware MOM
 Message Broker Software
 
 Wir befinden uns in der Domaine für 'Event-driven-Microservices'
 Message Format ist beliebig, XML, Json, binary, ...
+
+Flow Control
+------------
+RabbitMQ vermindert die Geschwindgkeit von Verbindungen (tcp backpressure) die mehr Messages senden als verarbeitet werden können. 
+Funktioniert ohne zusätzliche Konfiguration
 
 
 Vorteile
@@ -85,13 +94,16 @@ Consumer, Receiver, Subscriber
 
 Queue
 
+Channel: Verbindung zwischen Sender und Broker oder Consumer und Broker
+
 Sicherstellung einer Zustellung
 -------------------------------
 Queue -> Confirm -> Provider
 Consumer -> Acknowledge -> Queue
 
+
 Im Falle eines Fehlers werden Meldungen evtl. mehrfach zugestellt. 
-Das Programm muss damit umgehen können.
+Das Programm muss damit umgehen können. Garantiert wird 'at least ones'
 
 Pup/Sub
 Neues Konzept bei AMQP ist Exchange die jeweils einer Queue vorgeschaltet ist.
