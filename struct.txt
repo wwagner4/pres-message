@@ -12,10 +12,23 @@ Message Oriented Middleware (MOM, RabbitMQ) in Kostenarstattung mit AI (KAI)
 Graphik mit Komponenten und Queues
 
 
+--------------------------------------------------------------
+Message Oriented Middleware (MOM) 
+Bezeichnet Middleware, die auf der synchronen oder asynchronen Übertragung von Messages beruht.
 
-MOM implementiert AMQP
+Eigenschaften
+    - Server/Dienst muss nicht sofort verfügbar sein
+    - Lose Kopplung von Server/Clients
+    - Mehr Toleranz für Änderungen der bestehenden Funktionen
+    - Verbesserte Verfügbarkeit der Systeme
+    - Parallele Verarbeitung von Nachrichten möglich
+
+Nachteile
+    - Ausfall der MOM legt alle angeschlossenen Systeme lahm
+
+
+Protokoll AMQP
 -------------------------------------------------------------
-Definition
 Ist ein offener Standard, der ein binäres Netzwerkprotokoll auf Anwendungsebene für eine Message-orientierte Middleware (MOM) darstellt.
 
 Eigenschaften:
@@ -91,4 +104,5 @@ Further Topics
 -- DeadLetterExchange
 -- TTL
 - Clustering
+- Backpressure
  
