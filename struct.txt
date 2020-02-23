@@ -48,8 +48,9 @@ Eigenschaften:
 - Commercial Support
 - Large Community
 
-Übersicht eine Queue mit allen beteiligten Begriffen
+Core components of a 
 -------------------------------------------------------------
+[Übersicht eine Queue mit allen beteiligten Begriffen]
 - Sender, Provider
 - Broker, Message-Broker, RabbitMQ-Server
 -- Queue
@@ -60,3 +61,34 @@ Eigenschaften:
 -- TCP 
 - AMQP 
 
+Sichere Übertragung (at least ones)
+---------------------------------------------------------------
+[Übersicht eine Queue mit allen beteiligten Begriffen]
++ Confirm
++ Acknowledge
+
+Nachteil:
+- Consumer muss mit mehrfachen Auftreten von Meldungen klar kommen
+
+Routing
+---------------------------------------------------------------
+[Übersicht eine Queue mit allen beteiligten Begriffen]
++ RoutingKey
++ BindingKey
+
+Kinds of Exchanges
+- FanOut
+- Direct
+- Topic
+
+- 'banana'    = 'banana'
+- 'banana.*' = 'banana', 'banana.apple', 'banana.apple.orange'
+- 'banana.#' = 'banana.apple', 'banana.orange'
+
+Further Topics
+----------------------------------------------------------------
+- Error Handling
+-- DeadLetterExchange
+-- TTL
+- Clustering
+ 
