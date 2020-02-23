@@ -3,6 +3,13 @@ https://fullstackmastery.com/courses/RMQJAVA/lessons/65
 https://www.youtube.com/watch?v=trRAaPxRZ7U
 
 
+Questions to our code: 
+- Do we use spring-ampq ?
+- What Version of AMQP is used.
+
+Clusters: Mehrerer rabbit-mq Server (Broker) die regelmässig ihren Status austauschen. -> Ausfallsicherheit.
+
+
 Message Oriented Middleware MOM
 Message Broker Software
 

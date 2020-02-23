@@ -1,0 +1,62 @@
+Struktur
+
+Start
+------------------------------------------------------------
+Message Oriented Middleware (MOM, RabbitMQ) in Kostenarstattung mit AI (KAI)
+
+
+
+
+Übersicht KAI
+-------------------------------------------------------------
+Graphik mit Komponenten und Queues
+
+
+
+MOM implementiert AMQP
+-------------------------------------------------------------
+Definition
+Ist ein offener Standard, der ein binäres Netzwerkprotokoll auf Anwendungsebene für eine Message-orientierte Middleware (MOM) darstellt.
+
+Eigenschaften:
+- Offener Standard
+- Plattform unabhängig
+- Hohe Verfügbarkeit
+- Sicher
+
+Um der großen Verbreitung von JMS Rechnung zu tragen, sind alle Funktionen von JMS in dem Protokoll eingearbeitet worden.
+
+RabbitMQ 
+-------------------------------------------------------------
+Definition 
+RabbitMQ ist eine Open Source Message Broker Software, die das Advanced Message Queuing Protocol (AMQP) implementiert. 
+Der RabbitMQ-Server ist in Erlang geschrieben. 
+
+Eigenschaften:
+
+- Reliability
+-- Clustering
+- Unterschiedliche Protokolle
+- Plattformunabhängigkeit
+-- Java
+-- Python
+-- JavaScript 
+-- Und viele mehr 
+- Management UI
+-- Tracing
+- Plugin System
+- Commercial Support
+- Large Community
+
+Übersicht eine Queue mit allen beteiligten Begriffen
+-------------------------------------------------------------
+- Sender, Provider
+- Broker, Message-Broker, RabbitMQ-Server
+-- Queue
+-- Binding
+-- Exchange
+- Consumer, Receiver, Subscriber
+- Channel
+-- TCP 
+- AMQP 
+
